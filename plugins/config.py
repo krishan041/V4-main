@@ -29,8 +29,6 @@ class Config(object):
     
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "")
     
-    HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
-    
     OUO_IO_API_KEY = ""
     
     MAX_MESSAGE_LENGTH = 4096
@@ -55,3 +53,10 @@ class Config(object):
     
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "Bot extract")
                                   
+    WEBHOOK = True  # Don't change this
+    
+    HOST = "https://drm-api-six.vercel.app"
+    
+    CREDIT = "ALONE🛡️"#Here You Can Change with Your Name  or any custom name or title you prefer
+    
+    PORT = int(os.environ.get('PORT', 8080))  # Default to 8000 for local testing
