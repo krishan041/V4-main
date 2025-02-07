@@ -16,5 +16,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y ffmpeg && rm -rf 
 # Copy the bot script
 COPY . .
 
+Expose 8080
+
 # Set the command to run the bot
 CMD ["python3", "bot.py"]
+CMD gunicorn app:app & python3 bot.py
