@@ -14,10 +14,6 @@ from pyrogram import Client as Ntbots
 from pyrogram import filters
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
-
     if not os.path.isdir(Config.DOWNLOAD_LOCATION):
         os.makedirs(Config.DOWNLOAD_LOCATION)
     plugins = dict(root="plugins")
