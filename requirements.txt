@@ -19,5 +19,5 @@ filetype
 tldextract
 aiofiles
 pyromod
-flask
+Flask
 gunicorn==20.1.0
